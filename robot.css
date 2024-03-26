@@ -1,0 +1,17 @@
+.top-section {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+
+  height: 500px;
+}
+
+.bottom-section {
+  background-color: violet;
+  height: 400px;
+}
+
+.text-container {
+  color: white;
+  padding: 30px;
+}
