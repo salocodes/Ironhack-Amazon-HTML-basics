@@ -1,15 +1,21 @@
+@font-face {
+  font-family: inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: inter;
 }
 
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .header {
@@ -19,6 +25,7 @@ ul {
 
   .logo {
     font-size: 4em;
+    font-weight: bold;
   }
 
   .navbar {
@@ -34,9 +41,9 @@ ul {
 }
 
 .main {
-  margin: 50px;
   display: flex;
   gap: 20px;
+  margin: 50px;
 
   .news-section {
     width: 66.66%;
@@ -44,14 +51,18 @@ ul {
     flex-direction: column;
     gap: 20px;
 
+    .main-img {
+      object-fit: cover;
+    }
+
     .news-text-section {
       display: flex;
       gap: 20px;
 
       .title {
         width: 50%;
-        margin: 0;
         font-size: 3em;
+        margin: 0;
       }
 
       .text-container {
@@ -87,6 +98,11 @@ ul {
 
     .aside-link {
       border-bottom: solid 1px lightgray;
+
+      .link-text {
+        color: lightgray;
+        font-size: 0.8em;
+      }
     }
     .aside-link:last-child {
       border: none;
@@ -94,3 +110,21 @@ ul {
   }
 }
 
+.bottom-links {
+  margin: 10px 50px;
+
+  .link-list {
+    display: flex;
+    gap: 20px;
+
+    .link-card {
+      display: flex;
+      gap: 20px;
+      height: 200px;
+
+      .number {
+        color: lightgray;
+      }
+    }
+  }
+}
