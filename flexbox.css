@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: white;
+  color: rgb(244, 36, 237);
 }
 
 .container {
@@ -34,3 +34,20 @@ a {
 .box3 {
   background-color: blue;
 }
+
+.header{
+  background-color: blue;
+  color: rgb(0, 211, 116);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+
+/* este selector lo suyo sería hacerlo de clase, pero el profe por hacerlo rápido lo ha hecho de etiqueta puesto que es un ejemplo
+
+nav{
+  display: flex;
+  gap: 30px;
+} */
+
